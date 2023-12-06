@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="../task_02_Media/stopwatch.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Stop Watch</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light ms-5">
+      <div class="container-fluid" id="nav_container1"  data-aos="zoom-out-down" data-aos-delay="200">
+        <!-- <img src="../task_02_Media/me.jpg" alt="Profile" class="me"> -->
+        <a href="mailto:khamitkarsaichandan1035@gmail.com"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#fff" class="bi bi-envelope" id="mail_logo" viewBox="0 0 16 16">
+          <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+        </svg></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="nav_ul">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#" id="nav_text" data-aos="zoom-out-down" data-aos-delay="200">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://portfolio-chandan-6.netlify.app/" id="nav_text" target="_blank" data-aos="zoom-out-down" data-aos-delay="200">Portfolio</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="card_box" data-aos="flip-left" data-aos-delay="200">
+      <div class="background">
+        <div class="title_sw">
+          <p class="stop_watch_title"  data-aos="zoom-in" data-aos-delay="400">stopwatch</p>
+        </div>
+        <!-- <div class="line"></div> -->
+        <div class="timer_display" data-aos="zoom-in-up" data-aos-delay="500">00 : 00 : 00 : 000</div>
+        <div class="three_buttons" data-aos="zoom-in-up" data-aos-delay="650">
+          <button id="pause_timer">pause</button>
+          <button id="start_timer">start</button>
+          <button id="reset_timer">reset</button>
+        </div>
+
+        <div class="lap_box">
+          <div class="lap_btn"  data-aos="zoom-in-up" data-aos-delay="700">
+            <button class="Btn" id="Btn">
+              <div class="sign"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-flag-fill" viewBox="0 0 16 16">
+                <path d="M14.778.085A.5.5 0 0 1 15 .5V8a.5.5 0 0 1-.314.464L14.5 8l.186.464-.003.001-.006.003-.023.009a12.435 12.435 0 0 1-.397.15c-.264.095-.631.223-1.047.35-.816.252-1.879.523-2.71.523-.847 0-1.548-.28-2.158-.525l-.028-.01C7.68 8.71 7.14 8.5 6.5 8.5c-.7 0-1.638.23-2.437.477A19.626 19.626 0 0 0 3 9.342V15.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 1 0v.282c.226-.079.496-.17.79-.26C4.606.272 5.67 0 6.5 0c.84 0 1.524.277 2.121.519l.043.018C9.286.788 9.828 1 10.5 1c.7 0 1.638-.23 2.437-.477a19.587 19.587 0 0 0 1.349-.476l.019-.007.004-.002h.001"/>
+              </svg></div>
+              <div class="text">Lap</div>
+            </button>
+          </div>
+          <!-- <div class="line"></div> -->
+          <ul class="lap_list" id="lap_list">
+            <!-- <li class="lap_list_li">#1 00 : 00 : 00 : 000</li>
+            <li>#2 00 : 00 : 00 : 000</li>
+            <li>#3 00 : 00 : 00 : 000</li> -->
+          </ul>
+        </div><!--lap box-->
+        
+      </div>
+      <div class="blob"></div>
+  </div>
+
+  <div class="container" id="Contact">
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary"></a></li>
+      </ul>
+      <div class="mail_box">
+        <a href="mailto:khamitkarsaichandan1035@gmail.com" style="text-decoration-line: none;">
+            <p class="text-center text-body-secondary" id="mail_id"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#00000" class="mail_icon_footer" viewBox="0 0 16 16">
+              <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+            </svg><b>khamitkarsaichandan1035@gmail.com</b></p>
+        </a>
+      </div>
+    </footer>
+  </div>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+      <script src="script.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </body>
+</html>

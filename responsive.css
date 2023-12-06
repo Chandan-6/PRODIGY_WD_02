@@ -1,0 +1,20 @@
+@media only screen and (max-width: 476px){
+    .card_box{
+        width: 300px;
+    }
+
+    .background{
+        width: 290px;
+    }
+
+    .timer_display {
+        font-size: 26px;
+    }
+
+    #pause_timer, #reset_timer,#start_timer {
+        padding: 12px 19px;
+        font-size: 10px;
+    }
+
+    
+}
