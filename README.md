@@ -16,5 +16,7 @@ This project is web-based Stop Watch. Which is user-friendly and allows users to
 - HTML
 - CSS
 - JavaScript
+- BootStrap
+- AOS Github plugin
 
 **Preview/Direct link of the project**: https://stopwatchchandan-6.netlify.app/
